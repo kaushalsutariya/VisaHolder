@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="card shadow mt-5">
+    <h3 class="text-center mb-4 fw-bold">Visa Holder Records</h3>
+    <form (ngSubmit)="next()">
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle" id="visaTable">
+          <thead class="table-striped text-center">
+            <tr>
+              <th>Select</th>
+              <th>ID</th>
+              <th>Visa Holder Name</th>
+              <th>Visa Type</th>
+              <th>Date of Birth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of visaData; let i = index">
+              <td class="text-center">
+                <input type="checkbox" [checked]="selectedIndexes.has(i)" (change)="toggleSelection(i, $event)">
+              </td>
+              <td>{{ item.id }}</td>
+              <td>{{ item.visaHolderName }}</td>
+              <td>{{ item.visaType }}</td>
+              <td>{{ item.dateOfBirth }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex justify-content-end gap-2 mt-3">
+        <button type="button" class="btn btn-danger" (click)="deleteSelected()">Delete Selected</button>
+        <button type="submit" class="btn btn-primary">Next</button>
+      </div>
+    </form>
+  </div>
+</div>

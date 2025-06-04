@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "QP5r9BvOXelt9tKP/PHL3G+0vK6ut/5e5Mf0MeKiQZQ=",
+  "Source": "visa_holder",
+  "BasePath": "_content/visa_holder",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

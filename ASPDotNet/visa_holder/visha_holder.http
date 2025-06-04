@@ -1,0 +1,6 @@
+@visha_holder_HostAddress = http://localhost:5092
+
+GET {{visha_holder_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
